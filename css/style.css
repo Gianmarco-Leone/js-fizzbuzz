@@ -4,11 +4,49 @@
     box-sizing: border-box;
 }
 
+body {
+    background-color: #083B4C;
+}
+
 ul {
+    padding: 2rem 0;
+    display: flex;
+    flex-wrap: wrap;
     list-style: none;
+    gap: 1rem;
 }
 
 .container {
-    max-width: 1200px;
+    max-width: 800px;
     margin: 0 auto;
+}
+
+.h1 {
+    text-align: center;
+    color: #FFF;
+    font-size: 3rem;
+    padding: 1rem 0;
+}
+
+.box {
+    width: 4rem;
+    height: 4rem;
+    line-height: 4rem;
+    text-align: center;
+}
+
+.box.box-number {
+    background-color: #1389B2;
+}
+
+.box.box-fizz {
+    background-color: #0CD6A1;
+}
+
+.box.box-buzz {
+    background-color: #FFD166;
+}
+
+.box.box-fizzbuzz {
+    background-color: #F0466F;
 }

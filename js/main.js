@@ -21,26 +21,30 @@ for (let i = 1; i <= 100; i++) {
 
     const listItem = document.createElement("li");
     listEl.append(listItem);
-    console.log(listItem);
+    // console.log(listItem);
 
     // STAMPO NUMERI IN CONSOLE
     // SE n MULTIPLO SIA DI 3 CHE DI 5 STAMPO "FIZZBUZZ" AL POSTO DI n
     if (i % 15 == 0) {
         myNumber = "FizzBuzz";
         console.log(myNumber);
+        listItem.classList.add("box", "box-fizzbuzz");
 
         // SE n MULTIPLO DI 5 STAMPO "BUZZ" AL POSTO DI n
     } else if (i % 5 == 0) {
         myNumber = "Buzz";
         console.log(myNumber);
+        listItem.classList.add("box", "box-buzz");
 
         // SE n MULTIPLO DI 3 STAMPO "FIZZ" AL POSTO DEL n
     } else if (i % 3 == 0) {
         myNumber = "Fizz";
         console.log(myNumber);
+        listItem.classList.add("box", "box-fizz");
 
     } else {
         console.log(myNumber);
+        listItem.classList.add("box", "box-number");
     }
 
     listItem.innerHTML = myNumber;
