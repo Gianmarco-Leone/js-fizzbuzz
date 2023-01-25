@@ -16,9 +16,14 @@ const listEl = document.getElementById("list");
 // CREARE CICLO CON NUMERI DA 1 A 100
 // DENTRO IL CICLO DEVO GENERARE NUMERI DA 1 A 100
 for (let i = 1; i <= 100; i++) {
-    // STAMPO NUMERI IN CONSOLE
-    let myNumber = i;
 
+    let myNumber = i;
+    const listItem = document.createElement("li");
+    // console.log(listItem);
+    listEl.append(listItem);
+
+
+    // STAMPO NUMERI IN CONSOLE
     // SE n MULTIPLO SIA DI 3 CHE DI 5 STAMPO "FIZZBUZZ" AL POSTO DI n
     if (i % 15 == 0) {
         myNumber = "FizzBuzz";
