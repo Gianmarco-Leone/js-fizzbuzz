@@ -18,10 +18,10 @@ const listEl = document.getElementById("list");
 for (let i = 1; i <= 100; i++) {
 
     let myNumber = i;
-    const listItem = document.createElement("li");
-    // console.log(listItem);
-    listEl.append(listItem);
 
+    const listItem = document.createElement("li");
+    listEl.append(listItem);
+    console.log(listItem);
 
     // STAMPO NUMERI IN CONSOLE
     // SE n MULTIPLO SIA DI 3 CHE DI 5 STAMPO "FIZZBUZZ" AL POSTO DI n
@@ -43,4 +43,5 @@ for (let i = 1; i <= 100; i++) {
         console.log(myNumber);
     }
 
+    listItem.innerHTML = myNumber;
 };
