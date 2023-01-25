@@ -15,20 +15,27 @@
 const listEl = document.getElementById("list");
 // CREARE CICLO CON NUMERI DA 1 A 100
 // DENTRO IL CICLO DEVO GENERARE NUMERI DA 1 A 100
-for (let i = 0; i < 100; i++) {
+for (let i = 1; i <= 100; i++) {
     // STAMPO NUMERI IN CONSOLE
-    let myNumber = i + 1;
-    console.log(myNumber);
+    let myNumber = i;
 
-    // SE n MULTIPLO DI 3 STAMPO "FIZZ" AL POSTO DI n
-    // if (i % 3 == 0) {
-    //     let textFirst = "Fizz";
-    //     console.log(textFirst);
-    // }
+    // SE n MULTIPLO SIA DI 3 CHE DI 5 STAMPO "FIZZBUZZ" AL POSTO DI n
+    if (i % 15 == 0) {
+        myNumber = "FizzBuzz";
+        console.log(myNumber);
+
+        // SE n MULTIPLO DI 5 STAMPO "BUZZ" AL POSTO DI n
+    } else if (i % 5 == 0) {
+        myNumber = "Buzz";
+        console.log(myNumber);
+
+        // SE n MULTIPLO DI 3 STAMPO "FIZZ" AL POSTO DEL n
+    } else if (i % 3 == 0) {
+        myNumber = "Fizz";
+        console.log(myNumber);
+
+    } else {
+        console.log(myNumber);
+    }
 
 };
-
-
-
-// SE n MULTIPLO DI 5 STAMPO "BUZZ" AL POSTO DI n
-// SE n MULTIPLO SIA DI 3 CHE DI 5 STAMPO "FIZZBUZZ" AL POSTO DEL n
